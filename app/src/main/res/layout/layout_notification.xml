@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/iv_playpause_notification"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exo_controls_pause"/>
+
+    <ImageView
+        android:id="@+id/iv_notification"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_notif_song"
+        android:layout_width="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_playpause_notification"
+        android:layout_toRightOf="@id/iv_notification"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_singer_notif"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tv_notif_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_toLeftOf="@id/iv_playpause_notification"
+        android:layout_toRightOf="@id/iv_notification"
+        android:textColor="#6f030303"/>
+
+</RelativeLayout>

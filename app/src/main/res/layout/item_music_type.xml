@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_item"
+    android:layout_height="200dp"
+    android:padding="5dp">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_item_musicType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_ItemMusicType"
+        android:background="@drawable/custom_item_gradient"
+        android:textAllCaps="true"
+        android:text="All"
+        android:textColor="#ffff"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

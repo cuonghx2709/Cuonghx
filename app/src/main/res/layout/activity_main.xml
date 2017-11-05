@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/rl_main"
+    android:layout_height="match_parent"
+    tools:context="com.example.cuonghx.freemusic.activities.MainActivity">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="@color/colorLight"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rl_layoutmini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatButton_mini_layout"
+            android:layout_width="wrap_content"
+            app:fabSize="mini"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_pause_black_24dp"/>
+
+        <RelativeLayout
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/floatButton_mini_layout">
+
+            <include layout="@layout/item_top_song"/>
+
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seebar_main"
+            android:thumb="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_above="@id/rl_layoutmini"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_below="@id/tablayout_main"
+            android:id="@+id/viewpager_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
